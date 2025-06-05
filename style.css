@@ -11,6 +11,28 @@ body {
   color: #ffffff;
   scroll-behavior: smooth;
   line-height: 1.6;
+
+  .hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4; /* Sesuaikan untuk gelap/terang */
+  pointer-events: none;
+}
+
 }
 
 /* Navigation */
@@ -159,4 +181,6 @@ footer {
   .hero-content h1 {
     font-size: 2.2rem;
   }
+
+
 }
