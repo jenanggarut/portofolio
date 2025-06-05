@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <!-- Video Background -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="waves.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
+
+    <nav class="navbar">
+      <h2 class="logo">MWA</h2>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#services">Keahlian</a></li>
+        <li><a href="#portfolio">Prestasi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Halo, Saya Wildan</h1>
+      <p>Web Developer | UI/UX Designer | Robotic Project | App Developer</p>
+      <p></p>
+      <a href="#portfolio" class="button" id="scrollButton">Lihat Prestasi Saya</a>
+    </div>
+  </header>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="section light">
+    <h2>Tentang Saya</h2>
+    <p>Perkenalkan nama saya Muhammad Wildan Al Ghifari, saya lahir tahun 2008 berada di kota kecil bernama Cilegon. Saya adalah pelajar yang sedang menimba ilmu di SMAIT Raudhatul Jannah Cilegon.</p>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="services" class="section dark">
+    <h2>Keahlian</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Frontend Development</h3>
+        <p>Menguasai HTML, CSS, React, Python, C family.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Desain antarmuka responsif dan ramah pengguna dengan Figma & Adobe XD.</p>
+      </div>
+      <div class="card">
+        <h3>Backend & Database</h3>
+        <p>Node.js, PHP, MySQL, dan pengelolaan API untuk aplikasi dinamis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prestasi -->
+  <section id="portfolio" class="section light">
+    <h2>Pencapaian & Prestasi</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Silver medal</h3>
+        <p>Indonesia Youth Robot Association & myMAKERS IIUM 2023</p>
+      </div>
+      <div class="card">
+        <h3>Bronze medal</h3>
+        <p>Indonesia Youth Robot Association & University of Indonesia 2022</p>
+      </div>
+      <div class="card">
+        <h3>Semifinalist</h3>
+        <p>ASEAN Youth Research Innovation Summit AYRIS 2022</p>
+      </div>
+      <div class="card">
+        <h3>Finalist</h3>
+        <p>Festival Inovasi dan Kewirausahaan Siswa Nasional tingkat SMA/MA 2024</p>
+      </div>
+      <div class="card">
+        <h3>On going</h3>
+        <p>Olimpiade Penelitian Siswa Indonesia (OPSI) 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="section dark">
+    <h2>Kontak</h2>
+    <p>Butuh kontak? <a href="mailto:wildangifar8@gmail.com">wildangifar8@gmail.com</a> atau hubungi saya melalui <a href="https://wa.me/6281234567890">WhatsApp</a>.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Wildan. Portofolio Pribadi.</p>
+  </footer>
+
+  <script>
+    document.getElementById('scrollButton').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('#portfolio').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
