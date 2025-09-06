@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
   color: #ffffff;
   scroll-behavior: smooth;
@@ -184,4 +184,5 @@ footer {
 
 
 }
+
 
